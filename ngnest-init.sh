@@ -45,8 +45,9 @@ echo -e "${VS_BLUE}➤ Creazione Workspace Nx...${NC}"
 npx create-nx-workspace@latest "$PROJECT_NAME" --preset=apps --packageManager=npm --nxCloud=skip --yes
 cd "$PROJECT_NAME" || exit
 
-echo -e "\n${VS_BLUE}➤ Installazione Plugin...${NC}"
-npm install -D @nx/angular @nx/nest @nx/js
+echo -e "\n${VS_BLUE}➤ Installazione Plugin e Fix Dipendenze...${NC}"
+# Aggiungiamo esplicitamente @swc/core e @swc/helpers per allinearli alle richieste di Nest
+npm install -D @nx/angular @nx/nest @nx/js @swc/core@latest @swc/helpers@latest
 
 echo -e "\n${VS_BLUE}➤ Configurazione Defaults (nx.json)...${NC}"
 # Inietta regole in nx.json per forzare SCSS e Jest su tutti i futuri componenti
