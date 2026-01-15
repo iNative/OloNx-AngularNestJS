@@ -3,7 +3,8 @@
 Automazione Monorepo Nx per Angular & NestJS.
 
 
-## > 📖 **Documentazione Completa:** Per la guida visuale e il Master Log, apri <a href="https://inative.github.io/ngnest-init/" target="_blank">docs/index.html</a> nel tuo browser.
+## > 📖 Documentazione Completa
+Per la guida visuale e il Master Log, apri <a href="https://inative.github.io/ngnest-init/" target="_blank">docs/index.html</a> nel tuo browser.
 
 ## 💡 Why this Architecture?
 
