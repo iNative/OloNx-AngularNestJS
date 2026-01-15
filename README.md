@@ -22,7 +22,6 @@ Salva il seguente codice nel file `ngnest-init.sh`.
 Lo script gestisce interattivamente nomi, errori e configura i default del workspace.
 
 
-
 Esegui il comando nel terminale: `bash ngnest-init.sh`
     
 
@@ -30,10 +29,6 @@ Esegui il comando nel terminale: `bash ngnest-init.sh`
 -------------------------
 
 > Definisci il dato una volta sola, usalo ovunque.
-
-
-
-### 2\. Importa (Automaticamente collegato)
 
 Grazie al `tsconfig` centralizzato, importi la lib come se fosse un pacchetto npm.
 
