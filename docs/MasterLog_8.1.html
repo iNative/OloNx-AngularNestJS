@@ -119,34 +119,55 @@
             }
         }
         
-        /* Mobile/Tablet (<1024px) */
+       
+/* Mobile/Tablet (<1024px) */
         @media(max-width: 1023px) {
             .sidebar { 
                 width: 100%; height: auto; position: fixed; bottom: 0; left: 0; 
                 border-top: 1px solid var(--border); display: flex; flex-direction: row; 
-                align-items: center; overflow-x: auto; box-shadow: 0 -4px 20px rgba(0,0,0,0.3); 
-                justify-content: flex-start; /* Allinea a sinistra */
+                align-items: stretch; /* Stretch assicura che input e link abbiano la stessa altezza visiva */
+                overflow-x: auto; box-shadow: 0 -4px 20px rgba(0,0,0,0.4); 
+                justify-content: flex-start;
+                /* Impedisce lo scroll della pagina di fondo quando tocchi la barra */
+                overscroll-behavior: contain; 
             }
             
             .sidebar ul { display: flex; flex-direction: row; flex-grow: 1; }
             
             .sidebar li a { 
-                border-radius: 0; padding: 15px 20px; font-size: 0.85rem; 
-                border-top: 3px solid transparent; margin-bottom: 0;
+                border-radius: 0; 
+                /* Padding ridotto: 10px verticale è sufficiente per il touch ma salva spazio */
+                padding: 10px 15px; 
+                font-size: 0.85rem; 
+                border-top: 3px solid transparent; 
+                margin-bottom: 0;
+                display: flex; align-items: center; /* Centra il testo verticalmente */
+                height: 100%; box-sizing: border-box;
             }
-            .sidebar li a.active { background: transparent; border-top-color: var(--accent); }
+            .sidebar li a.active { background: rgba(56, 189, 248, 0.05); border-top-color: var(--accent); }
             
-            /* Su mobile, box a sinistra fisso, menu scorrevole a destra */
+            /* Config Box ottimizzato per altezza ridotta */
             .config-box { 
                 border-bottom: none; 
                 border-right: 1px solid var(--border); 
-                padding: 10px; min-width: 160px; 
-                background: transparent; 
-                position: sticky; left: 0; /* Opzionale: tienilo fisso se lo scroll è lungo */
-                background-color: var(--bg-sidebar); z-index: 10;
+                padding: 8px; /* Meno padding esterno */
+                min-width: 140px; 
+                background: var(--bg-sidebar); 
+                position: sticky; left: 0; 
+                z-index: 10;
+                display: flex; flex-direction: column; justify-content: center;
+            }
+
+            /* Etichetta più compatta */
+            .config-box label { margin-bottom: 4px; font-size: 0.65rem; }
+
+            /* Input meno alto su mobile */
+            .config-box input { 
+                padding: 6px 8px; /* Padding interno ridotto */
+                font-size: 0.8rem; 
             }
             
-            .main-content { padding: 30px 20px 120px 20px; width: 100%; box-sizing: border-box; }
+            .main-content { padding: 20px 20px 100px 20px; width: 100%; box-sizing: border-box; }
         }
         
         /* Typography & Components */
