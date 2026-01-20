@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,7 +44,7 @@
             margin: 0 auto;
         }
 
-        /* Header e Badge */
+        /* Header and Badge */
         header { text-align: center; margin-bottom: 3rem; padding: 2rem 0; border-bottom: 1px solid var(--border); }
         h1 { font-size: 2.5rem; color: #fff; margin-bottom: 0.5rem; }
         .badge { font-size: 1rem; vertical-align: middle; background: var(--accent); color: #0f172a; padding: 4px 10px; border-radius: 20px; margin-left: 10px; }
@@ -76,7 +76,7 @@
         pre { padding: 1.5rem; overflow-x: auto; font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; line-height: 1.5; color: #e6edf3; }
         code { font-family: inherit; }
 
-        /* Syntax Highlighting Colors (Matching user input classes) */
+        /* Syntax Highlighting Colors */
         .cmt { color: #8b949e; font-style: italic; }
         .str { color: #a5d6ff; }
         .kwd { color: #ff7b72; }
@@ -116,125 +116,126 @@
 
 <div class="container">
     <header>
-    <h1>NgNest Init <span class="badge">v7.3</span></h1>
-    <p style="font-size: 1.2rem; color: var(--text-secondary);">
-        Automazione Monorepo Nx per Angular &amp; NestJS.
-    </p>
-    
-    <div style="margin-top: 20px;">
-        <a href="MasterLog_8.1.html" style="background: var(--accent); color: #0f172a; text-decoration: none; padding: 10px 20px; border-radius: 6px; font-weight: bold; font-size: 0.9rem;">
-            📂 Apri Master Log
-        </a>
-    </div>
-</header>
-    
+        <h1>NgNest Init <span class="badge">v7.3</span></h1>
+        <p style="font-size: 1.2rem; color: var(--text-secondary);">
+            Nx Monorepo Automation for Angular &amp; NestJS.
+        </p>
+        
+        <div style="margin-top: 20px;">
+            <a href="MasterLog_8.1.html" style="background: var(--accent); color: #0f172a; text-decoration: none; padding: 10px 20px; border-radius: 6px; font-weight: bold; font-size: 0.9rem;">
+                📂 Open Master Log
+            </a>
+        </div>
+    </header>
 
     <section class="features-grid">
         <div class="feature-card main">
             <span class="feat-icon">🛡️</span>
             <span class="feat-title hl-safety">End-to-End Type Safety</span>
             <p class="feat-desc">
-                Il superpotere di questa architettura. Le interfacce TypeScript vivono in una libreria condivisa.
-                Se modifichi un DTO nel Backend, il Frontend <strong>si rompe in compilazione</strong> prima ancora che tu possa committare.
+                The superpower of this architecture. TypeScript interfaces live in a shared library.
+                If you modify a DTO in the Backend, the Frontend <strong>breaks during compilation</strong> before you can even commit.
             </p>
         </div>
         <div class="feature-card">
             <span class="feat-icon">⚡</span>
             <span class="feat-title hl-auto">Standardization</span>
             <p class="feat-desc">
-                Configurazione automatica di <strong>SCSS</strong>, <strong>Esbuild</strong> e <strong>Jest</strong> per ogni nuovo componente generato.
+                Automatic configuration of <strong>SCSS</strong>, <strong>Esbuild</strong>, and <strong>Jest</strong> for every new component generated.
             </p>
         </div>
         <div class="feature-card">
             <span class="feat-icon">🚀</span>
             <span class="feat-title hl-perf">Developer Experience</span>
             <p class="feat-desc">
-                Struttura a cartelle scalabile, caching intelligente e naming convention forzate via script.
+                Scalable folder structure, smart caching, and enforced naming conventions via script.
             </p>
         </div>
     </section>
-<section style="margin: 60px 0; background: rgba(56, 189, 248, 0.05); border: 1px solid var(--border); border-radius: 12px; padding: 30px; display: flex; align-items: start; gap: 20px;">
-    <div style="font-size: 2.5rem;">🧠</div>
-    <div>
-        <h3 style="margin-top: 0; color: var(--text-primary);">Documentazione "Attiva"</h3>
-        <p style="color: var(--text-secondary); margin-bottom: 15px;">
-            Dimentica i wiki statici e obsoleti. NgNest introduce il concetto di <strong>Dynamic Scope Injection</strong> nella documentazione tecnica.
-        </p>
-        <ul style="color: var(--text-secondary); padding-left: 20px; line-height: 1.8;">
-            <li>
-                <strong>Smart Context:</strong> Nel <a href="MasterLog_8.1.html" style="color: var(--accent); text-decoration: none; font-weight: bold;">Master Log</a>, inserisci il nome del tuo progetto una volta sola.
-            </li>
-            <li>
-                <strong>Zero Errori Umani:</strong> Tutti gli snippet di codice (Import, Comandi Terminale, Classi) vengono rigenerati in tempo reale con il tuo namespace.
-            </li>
-            <li>
-                <strong>Onboarding Veloce:</strong> Trasforma giorni di affiancamento in una guida self-service a prova di errore.
-            </li>
-        </ul>
-    </div>
-</section>
+
+    <section style="margin: 60px 0; background: rgba(56, 189, 248, 0.05); border: 1px solid var(--border); border-radius: 12px; padding: 30px; display: flex; align-items: start; gap: 20px;">
+        <div style="font-size: 2.5rem;">🧠</div>
+        <div>
+            <h3 style="margin-top: 0; color: #fff;">"Active" Documentation</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 15px;">
+                Forget static and obsolete wikis. NgNest introduces the concept of <strong>Dynamic Scope Injection</strong> into technical documentation.
+            </p>
+            <ul style="color: var(--text-secondary); padding-left: 20px; line-height: 1.8;">
+                <li>
+                    <strong>Smart Context:</strong> In the <a href="MasterLog_8.1.html" style="color: var(--accent); text-decoration: none; font-weight: bold;">Master Log</a>, enter your project name just once.
+                </li>
+                <li>
+                    <strong>Zero Human Errors:</strong> All code snippets (Imports, Terminal Commands, Classes) are regenerated in real-time with your namespace.
+                </li>
+                <li>
+                    <strong>Fast Onboarding:</strong> Turn days of shadowing into an error-proof self-service guide.
+                </li>
+            </ul>
+        </div>
+    </section>
+
     <main>
         <section id="setup">
-            <h2>🚀 Quick Start: Inizializzazione</h2>
-            <p>
-                Salva il seguente codice nel file <code class="inline">ngnest-init.sh</code>. 
-                <br>Lo script gestisce interattivamente nomi, errori e configura i default del workspace.
+            <h2>🚀 Quick Start: Initialization</h2>
+            <p style="color: var(--text-secondary);">
+                Save the following code in the file <code class="inline">ngnest-init.sh</code>. 
+                <br>The script interactively handles naming, errors, and configures workspace defaults.
             </p>
 
             <div class="code-container">
-                <div class="code-header"><div>ngnest-init.sh</div><button class="copy-btn" onclick="copyToClipboard(this)">Copia</button></div>
+                <div class="code-header"><div>ngnest-init.sh</div><button class="copy-btn" onclick="copyToClipboard(this)">Copy</button></div>
                 <pre><code><span class="cmt">#!/bin/bash</span>
-<span class="cmt"># CONFIGURAZIONE E COLORI</span>
+<span class="cmt"># CONFIGURATION AND COLORS</span>
 VS_BLUE=<span class="str">'\033[1;34m'</span>
 VS_GREEN=<span class="str">'\033[1;32m'</span>
 VS_RED=<span class="str">'\033[1;31m'</span>
 VS_YELLOW=<span class="str">'\033[1;33m'</span>
 NC=<span class="str">'\033[0m'</span>
 
-<span class="cmt"># Gestione errori robusta</span>
+<span class="cmt"># Robust error handling</span>
 <span class="ctl">set</span> -e
 <span class="ctl">set</span> -o pipefail
 
-<span class="cmt"># 1. RACCOLTA DATI (INPUT UTENTE)</span>
+<span class="cmt"># 1. DATA COLLECTION (USER INPUT)</span>
 PROJECT_NAME=<span class="var">$1</span>
 
 <span class="ctl">if</span> [ -z <span class="str">"$PROJECT_NAME"</span> ]; <span class="ctl">then</span>
-    <span class="mtd">echo</span> -e -n <span class="str">"${VS_BLUE}➤ Inserisci il nome del Workspace (cartella root): ${NC}"</span>
+    <span class="mtd">echo</span> -e -n <span class="str">"${VS_BLUE}➤ Enter Workspace name (root folder): ${NC}"</span>
     <span class="mtd">read</span> PROJECT_NAME
 <span class="ctl">fi</span>
 
 <span class="ctl">if</span> [ -z <span class="str">"$PROJECT_NAME"</span> ]; <span class="ctl">then</span>
-    <span class="mtd">echo</span> -e <span class="str">"${VS_RED}❌ Errore: Nome progetto mancante.${NC}"</span>
+    <span class="mtd">echo</span> -e <span class="str">"${VS_RED}❌ Error: Project name missing.${NC}"</span>
     <span class="ctl">exit</span> 1
 <span class="ctl">fi</span>
 
-<span class="mtd">echo</span> -e -n <span class="str">"${VS_BLUE}➤ Inserisci nome App Angular [default: frontend]: ${NC}"</span>
+<span class="mtd">echo</span> -e -n <span class="str">"${VS_BLUE}➤ Enter Angular App name [default: frontend]: ${NC}"</span>
 <span class="mtd">read</span> FRONTEND_INPUT
 FRONTEND_APP_NAME=<span class="var">${FRONTEND_INPUT:-frontend}</span>
 
-<span class="mtd">echo</span> -e -n <span class="str">"${VS_BLUE}➤ Inserisci nome App NestJS [default: backend]: ${NC}"</span>
+<span class="mtd">echo</span> -e -n <span class="str">"${VS_BLUE}➤ Enter NestJS App name [default: backend]: ${NC}"</span>
 <span class="mtd">read</span> BACKEND_INPUT
 BACKEND_APP_NAME=<span class="var">${BACKEND_INPUT:-backend}</span>
 
 <span class="mtd">echo</span> -e <span class="str">"\n${VS_YELLOW}------------------------------------------------${NC}"</span>
-<span class="mtd">echo</span> -e <span class="str">"🚀 RIEPILOGO: Workspace: $PROJECT_NAME | Front: $FRONTEND_APP_NAME | Back: $BACKEND_APP_NAME"</span>
+<span class="mtd">echo</span> -e <span class="str">"🚀 SUMMARY: Workspace: $PROJECT_NAME | Front: $FRONTEND_APP_NAME | Back: $BACKEND_APP_NAME"</span>
 <span class="mtd">echo</span> -e <span class="str">"${VS_YELLOW}------------------------------------------------${NC}\n"</span>
 
-<span class="cmt"># Check prerequisiti</span>
+<span class="cmt"># Check prerequisites</span>
 <span class="ctl">if</span> ! <span class="mtd">command</span> -v node &amp;&gt; /dev/null; <span class="ctl">then</span>
-    <span class="mtd">echo</span> -e <span class="str">"${VS_RED}❌ Errore: Node.js non installato.${NC}"</span>
+    <span class="mtd">echo</span> -e <span class="str">"${VS_RED}❌ Error: Node.js not installed.${NC}"</span>
     <span class="ctl">exit</span> 1
 <span class="ctl">fi</span>
 
-<span class="mtd">echo</span> -e <span class="str">"${VS_BLUE}➤ Creazione Workspace Nx...${NC}"</span>
+<span class="mtd">echo</span> -e <span class="str">"${VS_BLUE}➤ Creating Nx Workspace...${NC}"</span>
 npx create-nx-workspace@latest <span class="str">"$PROJECT_NAME"</span> --preset=apps --packageManager=npm --nxCloud=skip --yes
 <span class="mtd">cd</span> <span class="str">"$PROJECT_NAME"</span> || <span class="ctl">exit</span>
 
-<span class="mtd">echo</span> -e <span class="str">"\n${VS_BLUE}➤ Installazione Plugin...${NC}"</span>
+<span class="mtd">echo</span> -e <span class="str">"\n${VS_BLUE}➤ Installing Plugins...${NC}"</span>
 npm install -D @nx/angular @nx/nest @nx/js
 
-<span class="mtd">echo</span> -e <span class="str">"\n${VS_BLUE}➤ Configurazione Defaults (nx.json)...${NC}"</span>
-<span class="cmt"># Inietta regole in nx.json per forzare SCSS e Jest su tutti i futuri componenti</span>
+<span class="mtd">echo</span> -e <span class="str">"\n${VS_BLUE}➤ Configuring Defaults (nx.json)...${NC}"</span>
+<span class="cmt"># Injects rules into nx.json to enforce SCSS and Jest on all future components</span>
 node -e <span class="str">"
 const fs = require('fs');
 const fileName = 'nx.json';
@@ -247,40 +248,40 @@ try {
 } catch (e) { process.exit(1); }
 "</span>
 
-<span class="mtd">echo</span> -e <span class="str">"\n${VS_BLUE}➤ Generazione Frontend: $FRONTEND_APP_NAME...${NC}"</span>
+<span class="mtd">echo</span> -e <span class="str">"\n${VS_BLUE}➤ Generating Frontend: $FRONTEND_APP_NAME...${NC}"</span>
 npx nx g @nx/angular:application \
   --name=<span class="str">"$FRONTEND_APP_NAME"</span> \
   --directory=<span class="str">"apps/$FRONTEND_APP_NAME"</span> \
   --style=scss --routing --e2eTestRunner=cypress --bundler=esbuild --ssr=<span class="kwd">false</span> --unitTestRunner=jest --no-interactive
 
-<span class="mtd">echo</span> -e <span class="str">"\n${VS_BLUE}➤ Generazione Backend: $BACKEND_APP_NAME...${NC}"</span>
+<span class="mtd">echo</span> -e <span class="str">"\n${VS_BLUE}➤ Generating Backend: $BACKEND_APP_NAME...${NC}"</span>
 npx nx g @nx/nest:application \
   --name=<span class="str">"$BACKEND_APP_NAME"</span> \
   --directory=<span class="str">"apps/$BACKEND_APP_NAME"</span> \
   --frontendProject=<span class="str">"$FRONTEND_APP_NAME"</span> \
   --unitTestRunner=jest --no-interactive
 
-<span class="mtd">echo</span> -e <span class="str">"\n${VS_BLUE}➤ Generazione Lib Shared...${NC}"</span>
+<span class="mtd">echo</span> -e <span class="str">"\n${VS_BLUE}➤ Generating Shared Lib...${NC}"</span>
 npx nx g @nx/js:library --name=shared-data --directory=libs/shared-data --bundler=tsc --importPath=<span class="str">"@$PROJECT_NAME/shared-data"</span> --unitTestRunner=jest --no-interactive
 
-<span class="mtd">echo</span> -e <span class="str">"\n${VS_GREEN}✅ SETUP COMPLETATO!${NC}"</span></code></pre>
+<span class="mtd">echo</span> -e <span class="str">"\n${VS_GREEN}✅ SETUP COMPLETED!${NC}"</span></code></pre>
             </div>
             
-            <p>Esegui il comando nel terminale:</p>
+            <p style="color: var(--text-secondary);">Run the command in your terminal:</p>
             <div class="code-container">
-                <div class="code-header"><div>Terminal</div><button class="copy-btn" onclick="copyToClipboard(this)">Copia</button></div>
+                <div class="code-header"><div>Terminal</div><button class="copy-btn" onclick="copyToClipboard(this)">Copy</button></div>
                 <pre><code>bash ngnest-init.sh</code></pre>
             </div>
         </section>
 
         <section id="workflow-shared">
             <h2>🔄 Workflow: Shared Types</h2>
-            <blockquote>
-                Definisci il dato una volta sola, usalo ovunque.
+            <blockquote style="border-left: 4px solid var(--accent); padding-left: 15px; margin: 20px 0; color: #fff; font-style: italic;">
+                Define data once, use it everywhere.
             </blockquote>
 
-            <h3>1. Definisci nella libreria condivisa</h3>
-            <p>File: <code>libs/shared-data/src/lib/user.interface.ts</code></p>
+            <h3>1. Define in the shared library</h3>
+            <p style="color: var(--text-secondary);">File: <code>libs/shared-data/src/lib/user.interface.ts</code></p>
             <div class="code-container">
                 <div class="code-header"><div>user.interface.ts</div></div>
                 <pre><code><span class="ctl">export</span> <span class="kwd">interface</span> <span class="cls">UserProfile</span> {
@@ -290,8 +291,8 @@ npx nx g @nx/js:library --name=shared-data --directory=libs/shared-data --bundle
 }</code></pre>
             </div>
 
-            <h3>2. Importa (Automaticamente collegato)</h3>
-            <p>Grazie al <code>tsconfig</code> centralizzato, importi la lib come se fosse un pacchetto npm.</p>
+            <h3>2. Import (Automatically linked)</h3>
+            <p style="color: var(--text-secondary);">Thanks to the centralized <code>tsconfig</code>, you import the lib as if it were an npm package.</p>
             <div class="code-container">
                 <div class="code-header"><div>app.component.ts</div></div>
                 <pre><code><span class="ctl">import</span> { UserProfile } <span class="ctl">from</span> <span class="str">'@olon-platform/shared-data'</span>;</code></pre>
@@ -300,65 +301,65 @@ npx nx g @nx/js:library --name=shared-data --directory=libs/shared-data --bundle
 
         <section id="cheatsheet">
             <h2>⚡ Nx Cheatsheet</h2>
-            <p>Comandi validati per <strong>Nx v20+</strong>. Usa questi comandi per evitare errori di schema.</p>
+            <p style="color: var(--text-secondary);">Commands validated for <strong>Nx v20+</strong>. Use these commands to avoid schema errors.</p>
 
-            <h3>🏃‍♂️ Esecuzione</h3>
+            <h3>🏃‍♂️ Execution</h3>
             <div class="code-container">
-                <div class="code-header"><div>Terminal</div><button class="copy-btn" onclick="copyToClipboard(this)">Copia</button></div>
+                <div class="code-header"><div>Terminal</div><button class="copy-btn" onclick="copyToClipboard(this)">Copy</button></div>
                 <pre><code>npx nx run-many -t serve -p frontend,backend</code></pre>
             </div>
 
-            <h3>✨ Generatori</h3>
+            <h3>✨ Generators</h3>
             <table>
                 <thead>
                     <tr>
                         <th width="15%">Tag</th>
-                        <th width="45%">Comando</th>
-                        <th>Descrizione</th>
+                        <th width="45%">Command</th>
+                        <th>Description</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td><span class="tag tag-fe">Frontend</span></td>
                         <td><code>npx nx g @nx/angular:component features/login</code></td>
-                        <td>Genera componente (SCSS, HTML, TS) in <code>features/</code>.</td>
+                        <td>Generates component (SCSS, HTML, TS) in <code>features/</code>.</td>
                     </tr>
                     <tr>
                         <td><span class="tag tag-fe">Frontend</span></td>
                         <td><code>npx nx g @nx/angular:service core/auth</code></td>
-                        <td>Genera servizio iniettabile in <code>src/app/core</code>.</td>
+                        <td>Generates injectable service in <code>src/app/core</code>.</td>
                     </tr>
                     <tr>
                         <td><span class="tag tag-fe">Frontend</span></td>
                         <td><code>npx nx g @nx/angular:guard core/guards/auth</code></td>
-                        <td>Genera una Route Guard funzionale.</td>
+                        <td>Generates a functional Route Guard.</td>
                     </tr>
                     <tr>
                         <td><span class="tag tag-fe">Frontend</span></td>
                         <td><code>npx nx g @nx/angular:interceptor core/jwt</code></td>
-                        <td>Genera un HttpInterceptor funzionale.</td>
+                        <td>Generates a functional HttpInterceptor.</td>
                     </tr>
 
                     <tr>
                         <td><span class="tag tag-be">Backend</span></td>
                         <td><code>npx nx g @nx/nest:resource products</code></td>
-                        <td>🚀 <strong>Best Practice:</strong> Crea Controller, Service, DTO e Module (CRUD).</td>
+                        <td>🚀 <strong>Best Practice:</strong> Creates Controller, Service, DTO, and Module (CRUD).</td>
                     </tr>
                     <tr>
                         <td><span class="tag tag-be">Backend</span></td>
                         <td><code>npx nx g @nx/nest:controller users</code></td>
-                        <td>Crea solo il Controller.</td>
+                        <td>Creates only the Controller.</td>
                     </tr>
                     <tr>
                         <td><span class="tag tag-be">Backend</span></td>
                         <td><code>npx nx g @nx/nest:service users</code></td>
-                        <td>Crea solo il Service (Logica di business).</td>
+                        <td>Creates only the Service (Business logic).</td>
                     </tr>
 
                     <tr>
                         <td><span class="tag tag-sh">Shared</span></td>
                         <td><code>npx nx g @nx/js:lib shared-ui</code></td>
-                        <td>Crea una nuova libreria TS condivisa nel monorepo.</td>
+                        <td>Creates a new shared TS library in the monorepo.</td>
                     </tr>
                 </tbody>
             </table>
@@ -366,10 +367,10 @@ npx nx g @nx/js:library --name=shared-data --directory=libs/shared-data --bundle
 
         <section id="troubleshooting">
             <h2>🐛 Troubleshooting</h2>
-            <ul>
-                <li><strong>Errore <code>$'\r': command not found</code>:</strong> Il file ha terminatori Windows (CRLF). Esegui <code>dos2unix ngnest-init.sh</code> o converti in LF dal tuo editor.</li>
-                <li><strong>Errore <code>npm error Invalid URL</code>:</strong> Causato anch'esso dai terminatori Windows. Converti in LF.</li>
-                <li><strong>Node Permissions:</strong> Se ricevi <code>EACCES</code>, significa che stai usando Node di root. Usa <strong>NVM</strong> con il tuo utente standard.</li>
+            <ul style="color: var(--text-secondary); padding-left: 20px;">
+                <li style="margin-bottom: 10px;"><strong>Error <code>$'\r': command not found</code>:</strong> The file has Windows line endings (CRLF). Run <code>dos2unix ngnest-init.sh</code> or convert to LF using your editor.</li>
+                <li style="margin-bottom: 10px;"><strong>Error <code>npm error Invalid URL</code>:</strong> Also caused by Windows line endings. Convert to LF.</li>
+                <li><strong>Node Permissions:</strong> If you get <code>EACCES</code>, it means you are using root Node. Use <strong>NVM</strong> with your standard user.</li>
             </ul>
         </section>
     </main>
@@ -378,6 +379,7 @@ npx nx g @nx/js:library --name=shared-data --directory=libs/shared-data --bundle
         <p>© 2026 Guido Filippo Serio - Script Version 7.3</p>
     </footer>
 </div>
+
 <script>
     function copyToClipboard(button) {
         const header = button.parentElement;
@@ -386,7 +388,7 @@ npx nx g @nx/js:library --name=shared-data --directory=libs/shared-data --bundle
 
         navigator.clipboard.writeText(text).then(() => {
             const originalText = button.textContent;
-            button.textContent = "Copiato!";
+            button.textContent = "Copied!";
             button.style.borderColor = "var(--accent)";
             button.style.color = "var(--accent)";
             
